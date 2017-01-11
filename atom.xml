@@ -4,21 +4,41 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-01-10T15:10:09.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://blurrett.com/"/>
+  <updated>2017-01-10T15:30:38.000Z</updated>
+  <id>http://blurrett.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>BlueHawky</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>新建文章</title>
+    <link href="http://blurrett.com/2017/01/10/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
+    <id>http://blurrett.com/2017/01/10/新建文章/</id>
+    <published>2017-01-10T15:29:46.000Z</published>
+    <updated>2017-01-10T15:30:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>基于Hexo的技术博客</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;基于Hexo的技术博客&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>test</title>
-    <link href="http://yoursite.com/2017/01/10/test/"/>
-    <id>http://yoursite.com/2017/01/10/test/</id>
+    <link href="http://blurrett.com/2017/01/10/test/"/>
+    <id>http://blurrett.com/2017/01/10/test/</id>
     <published>2017-01-10T15:10:09.000Z</published>
     <updated>2017-01-10T15:10:09.000Z</updated>
     
@@ -31,8 +51,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/01/10/hello-world/"/>
-    <id>http://yoursite.com/2017/01/10/hello-world/</id>
+    <link href="http://blurrett.com/2017/01/10/hello-world/"/>
+    <id>http://blurrett.com/2017/01/10/hello-world/</id>
     <published>2017-01-10T14:48:01.000Z</published>
     <updated>2017-01-10T14:48:01.000Z</updated>
     
