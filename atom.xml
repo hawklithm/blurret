@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blurrett.com/"/>
-  <updated>2017-01-10T15:30:38.000Z</updated>
+  <updated>2017-01-13T14:27:47.000Z</updated>
   <id>http://blurrett.com/</id>
   
   <author>
@@ -16,36 +16,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>新建文章</title>
-    <link href="http://blurrett.com/2017/01/10/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
-    <id>http://blurrett.com/2017/01/10/新建文章/</id>
-    <published>2017-01-10T15:29:46.000Z</published>
-    <updated>2017-01-10T15:30:38.000Z</updated>
+    <title>第一次使用hexo遇到的坑</title>
+    <link href="http://blurrett.com/2017/01/13/%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8hexo%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/"/>
+    <id>http://blurrett.com/2017/01/13/第一次使用hexo遇到的坑/</id>
+    <published>2017-01-13T12:59:45.000Z</published>
+    <updated>2017-01-13T14:27:47.000Z</updated>
     
-    <content type="html"><![CDATA[<p>基于Hexo的技术博客</p>
+    <content type="html"><![CDATA[<p>既然是使用hexo那么就先来说说第一次使用hexo遇到的坑</p>
+<p><img src="/images/126.jpg" alt=""></p>
+<h2 id="localhost-4000是空白"><a href="#localhost-4000是空白" class="headerlink" title="localhost:4000是空白"></a>localhost:4000是空白</h2><p>按照步骤装的hexo，生成静态页面也生成出来了，但是不知道为什么，hexo s 之后看localhost:4000却是空白页面</p>
+<p>折腾了半天也没结果，在public文件夹下的 index.html 里面也确实是个空白页，猜测是不是生成过程出了问题，到网上搜索了一番也没找到答案</p>
+<p>研究了半天想到会不会是 _config.yaml 配置文件配的不对，研究了一会，发现原来配置中的主题（theme）参数跟hexo根目录下的themes文件夹是对应的，比如配置landscape主题，那么对应的主题渲染信息就在themes下的landscape目录，(其实也可以不再landscape目录，hexo的主题采用的是git的submodule引进来的，具体配置见 .gitmodules，还好有点git的知识，不然我就呵呵呵了)我到主题对应的目录里面看，果然里面是空的，原来如此！hexo init的时候偷了下懒，我看半天下载不下来就把进程kill掉了</p>
+<p>ok，知道原因了就到git上去把对应theme的分支手动下载了下来，然后在一运行，搞定！</p>
+<h2 id="将静态页面部署到github上"><a href="#将静态页面部署到github上" class="headerlink" title="将静态页面部署到github上"></a>将静态页面部署到github上</h2><p>这个基本照着网上的教程操作就好了，不过页面的url必须设置成 your_blog_name.github.io 的形式，其实我是不介意的，但是呢，发现地址必须通过Https才能访问，而且我的chrome告诉我证书有问题，直接用Http还不能访问，这个不能忍啊，这让我如何跟周边电脑玩不溜的小伙伴们装B呢！</p>
+<p><img src="/images/133.jpg" alt=""></p>
+<p>然后又到网上搜索一番，发现说是以前能使用http访问，后来被github统一限制成https了。</p>
+<p>仔细看了下github上关于github page的介绍，发现可以自定义域名，设置了自定义域名之后，就可以用Http协议了！</p>
+<p><img src="/images/111.jpg" alt=""><br>很好很强大！</p>
+<p>于是我就把我以前博客的域名用过来了，当然还要记得到自己的域名服务商那里配置一下CNAME的路由</p>
+<p>对了，如果你想问我，怎么把图片插进来的，看这里：<br><a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="external">如何插入图片</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;基于Hexo的技术博客&lt;/p&gt;
-
+      &lt;p&gt;既然是使用hexo那么就先来说说第一次使用hexo遇到的坑&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/126.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;localhost-4000是空白&quot;&gt;&lt;a href=&quot;#localhost-4000是空白&quot; class
     
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://blurrett.com/2017/01/10/test/"/>
-    <id>http://blurrett.com/2017/01/10/test/</id>
-    <published>2017-01-10T15:10:09.000Z</published>
-    <updated>2017-01-10T15:10:09.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
+      <category term="hexo" scheme="http://blurrett.com/tags/hexo/"/>
     
   </entry>
   
